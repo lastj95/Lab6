@@ -100,6 +100,17 @@ public partial class MainPage : ContentPage
         XScoreLBL.Text = String.Format("X's Score: {0}", ticTacToe.XScore);
         OScoreLBL.Text = String.Format("O's Score: {0}", ticTacToe.OScore);
 
+        if (victor == Player.X)
+        {
+            CelebratoryMessage.Text = "Player X " + WinningMessage();
+            ticTacToe.XScore += 1;
+        }
+        else
+        {
+            CelebratoryMessage.Text = "Player Y " + WinningMessage();
+            ticTacToe.OScore += 1;
+        }
+
         ResetGame();
     }
 
@@ -119,6 +130,16 @@ public partial class MainPage : ContentPage
         Tile22.Text = "";
     }
 
+    private String WinningMessage()
+    {
+        string[] winningMessages = { "crushed their opponent!", "had the easiest win ever!", 
+        "has won!", "rules at tic-tac-toe!", "has won, onto the next!", "is a tic-tac-toe LEGEND!"};
+
+        Random rand = new Random();
+        int index = rand.Next(winningMessages.Length);
+        string message = winningMessages[index];
+        return message;
+    }
 }
 
 

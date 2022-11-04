@@ -54,6 +54,10 @@ internal class TicTacToeGame
         {
             return scores[(int)Player.X];
         }
+        set
+        {
+            scores[(int)Player.X] = value;
+        }
     }
 
     /// <summary>
@@ -64,6 +68,10 @@ internal class TicTacToeGame
         get
         {
             return scores[(int)Player.O];
+        }
+        set
+        {
+            scores[(int)Player.O] = value;
         }
     }
 
