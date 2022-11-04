@@ -108,7 +108,15 @@ public partial class MainPage : ContentPage
     /// </summary>
     private void ResetGame()
     {
-
+        Tile00.Text = "";
+        Tile01.Text = "";
+        Tile02.Text = "";
+        Tile10.Text = "";
+        Tile11.Text = "";
+        Tile12.Text = "";
+        Tile20.Text = "";
+        Tile21.Text = "";
+        Tile22.Text = "";
     }
 
 }
