@@ -20,15 +20,15 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Orange" Grid.Row="0" Grid.Column="0" x:Name="Tile00" Text="" HorizontalOptions="Center"  VerticalOptions="Center"  Clicked="HandleButtonClick" FontSize="24"/>
+                <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Yellow" Grid.Row="0" Grid.Column="0" x:Name="Tile00" Text="" HorizontalOptions="Center"  VerticalOptions="Center"  Clicked="HandleButtonClick" FontSize="24"/>
                 <Button HeightRequest = "100" WidthRequest="100"  BackgroundColor="Yellow" Grid.Row="0" Grid.Column="1" x:Name="Tile01" Text="" HorizontalOptions="Center"  VerticalOptions="Center" Clicked="HandleButtonClick" FontSize="24"/>
-                <Button HeightRequest = "100" WidthRequest="100"  BackgroundColor="Green" Grid.Row="0" Grid.Column="2" x:Name="Tile02" Text="" HorizontalOptions="Center"  VerticalOptions="Center" Clicked="HandleButtonClick" FontSize="24"/>
-                <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Blue" Grid.Row="1" Grid.Column="0" x:Name="Tile10" Text="" HorizontalOptions="Center"  VerticalOptions="Center"  Clicked="HandleButtonClick" FontSize="24"/>
-                <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Violet" Grid.Row="1" Grid.Column="1" x:Name="Tile11" Text="" HorizontalOptions="Center"  VerticalOptions="Center"  Clicked="HandleButtonClick" FontSize="24"/>
-                <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Red" Grid.Row="1" Grid.Column="2" x:Name="Tile12" Text="" HorizontalOptions="Center"  VerticalOptions="Center" Clicked="HandleButtonClick" FontSize="24"/>
-                <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Orange" Grid.Row="2" Grid.Column="0" x:Name="Tile20" Text="" HorizontalOptions="Center"  VerticalOptions="Center"  Clicked="HandleButtonClick" FontSize="24"/>
+                <Button HeightRequest = "100" WidthRequest="100"  BackgroundColor="Yellow" Grid.Row="0" Grid.Column="2" x:Name="Tile02" Text="" HorizontalOptions="Center"  VerticalOptions="Center" Clicked="HandleButtonClick" FontSize="24"/>
+                <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="0" x:Name="Tile10" Text="" HorizontalOptions="Center"  VerticalOptions="Center"  Clicked="HandleButtonClick" FontSize="24"/>
+                <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="1" x:Name="Tile11" Text="" HorizontalOptions="Center"  VerticalOptions="Center"  Clicked="HandleButtonClick" FontSize="24"/>
+                <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="2" x:Name="Tile12" Text="" HorizontalOptions="Center"  VerticalOptions="Center" Clicked="HandleButtonClick" FontSize="24"/>
+                <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="0" x:Name="Tile20" Text="" HorizontalOptions="Center"  VerticalOptions="Center"  Clicked="HandleButtonClick" FontSize="24"/>
                 <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="1" x:Name="Tile21" Text="" HorizontalOptions="Center" VerticalOptions="Center"  Clicked="HandleButtonClick" FontSize="24"/>
-                <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Green" Grid.Row="2" Grid.Column="2" x:Name="Tile22" Text="" HorizontalOptions="Center"  VerticalOptions="Center" Clicked="HandleButtonClick" FontSize="24"/>
+                <Button HeightRequest = "100" WidthRequest="100" BackgroundColor="Yellow" Grid.Row="2" Grid.Column="2" x:Name="Tile22" Text="" HorizontalOptions="Center"  VerticalOptions="Center" Clicked="HandleButtonClick" FontSize="24"/>
 
             </Grid>
 
