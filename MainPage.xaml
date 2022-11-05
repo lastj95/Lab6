@@ -6,7 +6,7 @@
     <ScrollView>
         <VerticalStackLayout>
 
-            <Label x:Name="XScoreLBL" Text="X's Score: 0"   VerticalOptions="Center" FontSize="24"/>
+            <Label x:Name="XScoreLBL" Text="X's Score: 0"  VerticalOptions="Center" FontSize="24"/>
             <Label x:Name="OScoreLBL" Text="O's Score: 0"  VerticalOptions="Center" FontSize="24"/>
 
             <Grid Background="Chartreuse" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">

@@ -8,11 +8,11 @@ namespace Lab6Starter;
 
 /**
  * 
- * Name: 
- * Date:
- * Description:
- * Bugs:
- * Reflection: The most important bit ...
+ * Name: Brady Braun and James Last
+ * Date: 2022/11/5
+ * Description: The game being played, handles all game logic and passes appropriate UI changes back to the MainPage logic.
+ * Bugs: None that can be found! There were major ones related to getting the game properly reset, but those got fixed in earlier updates.
+ * Reflection: See MainPage reflection.
  * 
  */
 
@@ -207,6 +207,7 @@ internal class TicTacToeGame
                 grid[r, c] = Player.Nobody;
             }
         }
+
         CurrentPlayer = Player.X; // X always goes first
     }
 

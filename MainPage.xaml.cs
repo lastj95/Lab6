@@ -1,11 +1,12 @@
 ﻿namespace Lab6Starter;
 /**
  * 
- * Name: 
- * Date: How about this?
- * Description:
- * Bugs:
- * Reflection:
+ * Name: Brady Braun and James Last
+ * Date: 2022/11/5
+ * Description: Drives the UI and calls upon TicTacToeGame for game logic.
+ * Bugs: None that can be found.
+ * Reflection: Overall lab reflection - fun lab, although there was confusion on who was to do what in that Brady ended up implementing score and winning messages. Otherwise a nice little project and
+ * very educational in regards to GitHub.
  * 
  */
 
@@ -29,6 +30,7 @@ public partial class MainPage : ContentPage
         InitializeComponent();
         ticTacToe = new TicTacToeGame();
         grid = new Button[TicTacToeGame.GRID_SIZE, TicTacToeGame.GRID_SIZE] { { Tile00, Tile01, Tile02 }, { Tile10, Tile11, Tile12 }, { Tile20, Tile21, Tile22 } };
+        ResetGame();
     }
 
     /// <summary>
@@ -131,6 +133,9 @@ public partial class MainPage : ContentPage
         Tile20.Text = "";
         Tile21.Text = "";
         Tile22.Text = "";
+
+        ChangeColor();
+
         ticTacToe.ResetGame();
     }
 
@@ -143,6 +148,50 @@ public partial class MainPage : ContentPage
         int index = rand.Next(winningMessages.Length);
         string message = winningMessages[index];
         return message;
+    }
+
+    /// <summary>
+    /// Changes the color of the board. Board is all one color for visibility's sake.
+    /// </summary>
+    private void ChangeColor()
+    {
+        Random rand = new Random();
+        int colorDetermine = rand.Next(7);
+        Microsoft.Maui.Graphics.Color color;
+        switch (colorDetermine)
+        {
+            case 0:
+                color = Microsoft.Maui.Graphics.Color.Parse("Pink");
+                break;
+            case 1:
+                color = Microsoft.Maui.Graphics.Color.Parse("Orange");
+                break;
+            case 2:
+                color = Microsoft.Maui.Graphics.Color.Parse("Yellow");
+                break;
+            case 3:
+                color = Microsoft.Maui.Graphics.Color.Parse("NavajoWhite");
+                break;
+            case 4:
+                color = Microsoft.Maui.Graphics.Color.Parse("Salmon");
+                break;
+            case 5:
+                color = Microsoft.Maui.Graphics.Color.Parse("Khaki");
+                break;
+            default:
+                color = Microsoft.Maui.Graphics.Color.Parse("Thistle");
+                break;
+        }
+
+        Tile00.BackgroundColor = color;
+        Tile01.BackgroundColor = color;
+        Tile02.BackgroundColor = color;
+        Tile10.BackgroundColor = color;
+        Tile11.BackgroundColor = color;
+        Tile12.BackgroundColor = color;
+        Tile20.BackgroundColor = color;
+        Tile21.BackgroundColor = color;
+        Tile22.BackgroundColor = color;
     }
 }
 
